@@ -17,7 +17,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## PostCraft: X Tweet Features Recommendation and Text Generation System
 
-<img src="ProjectCode/static/iamges/introduction page1.png"
+<img src="ProjectCode/static/images/introduction page1.png"
      style="float: left; margin-right: 0px;" />
 
 ---
