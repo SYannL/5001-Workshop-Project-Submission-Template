@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>POSTCRAFT</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="POSTCRAFT" />
+    <meta
+      name="keywords"
+      content="A recommendation system made for social media advertising proposal"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animate.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/owl.carousel.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/icomoon.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <style>
+      #section-home {
+        background-image: url("{{ url_for('static', filename='images/bg_3.jpg') }}");
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      span {
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#section-home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section-features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section-services" class="nav-link">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="ftco-cover ftco-slant" id="section-home">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-center text-center ftco-vh-100"
+        >
+          <div class="col-md-10">
+            <img src={{ url_for('static',
+            filename='images/POSTCRAFT_ba-style@nulla.top.png') }}
+            alt="POSTCRAFT Image" class="img-fluid">
+            <h2 class="h5 ftco-subheading mb-5 ftco-animate">
+              A commercial tweet generator
+            </h2>
+            <p>
+              <a
+                href="javascript:void(0);"
+                onclick="scrollToFeatures()"
+                class="btn btn-primary ftco-animate"
+                >Get Started!</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-section bg-light ftco-slant ftco-slant-white"
+      id="section-features"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Our Awesome Features</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">
+                  Don't know what to post for your social media advertising
+                  proposal? No worries, we got you covered.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div
+              class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate"
+            >
+              <div class="ftco-icon mb-3">
+                <span class="oi oi-thumb-up display-4 text-muted"></span>
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0">High Quality</h5>
+                <p class="mb-5">
+                  Although just like no one knows what the best story is, we
+                  learn from all the outstanding commercial advertising posts,
+                  and we provide the most possible best content for you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div
+              class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate"
+            >
+              <div class="ftco-icon mb-3">
+                <span class="oi oi-bolt display-4 text-muted"></span>
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0">Fast Loading</h5>
+                <p class="mb-5">
+                  After filling in some required fields and clicking the submit
+                  button, we will deliver the result to you in just seconds.
+                  There is no need to waste your time on waiting.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div
+              class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate"
+            >
+              <div class="ftco-icon mb-3">
+                <span class="oi oi-person display-4 text-muted"></span>
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0">Personalized input</h5>
+                <p class="mb-5">
+                  You can customized every features listed below, and further
+                  more you can also give us one existing advertising text that
+                  you found good and we will provide similar but better content
+                  for you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="ftco-section ftco-slant" id="section-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Services</h2>
+            <div class="row justify-content-center mb-1">
+              <div class="col-md-7">
+                <p class="lead">
+                  Please choose your intended category and output features
+                  below.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <!-- Categories Section -->
+        <div class="row">
+          <div class="col-lg-4 mb-3 ftco-animate mx-auto">
+            <figure>
+              <img
+                src="{{ url_for('static', filename='images/img_2.png') }}"
+                alt="Free Template"
+                class="img-fluid"
+              />
+            </figure>
+
+            <!-- Buttons Section -->
+            <div class="btn-group mt-3">
+              <button
+                id="pretrainedBtn"
+                class="btn btn-primary active"
+                onclick="toggleModel('pretrained')"
+              >
+                Pretrained
+              </button>
+              <span class="mx-2"></span>
+              <button
+                id="newModelBtn"
+                class="btn btn-primary"
+                onclick="toggleModel('newModel')"
+              >
+                New Model
+              </button>
+            </div>
+
+            <!-- Date Picker Section -->
+            <div
+              class="p-3 text-center"
+              id="datePickerSection"
+              style="display: none"
+            >
+              <h3 class="h4 mb-4">Start Date</h3>
+              <!-- Add your date picker input here -->
+              <input type="date" id="datepicker" class="form-control mb-4" />
+              <!-- Add a little spacing -->
+              <div style="margin-bottom: 10px"></div>
+              <h3 class="h4 mb-4">End Date</h3>
+              <!-- Add your second date picker input here -->
+              <input type="date" id="datepicker2" class="form-control mb-4" />
+            </div>
+
+            <div class="p-3 text-center">
+              <h3 class="h4 mb-4">Categories</h3>
+              <select id="serviceOptions" class="custom-select mb-2">
+                <option selected>Select an product category</option>
+                <option value="Lipstick">Lipstick</option>
+                <option value="Eyeshadow">Eyeshadow</option>
+                <option value="Foundation">Foundation</option>
+                <option value="Blush">Blush</option>
+                <option value="Loose Powder">Loose Powder</option>
+                <option value="Isolation Cream">Isolation Cream</option>
+                <option value="Mascara">Mascara</option>
+                <option value="Eyeliner">Eyeliner</option>
+                <option value="Eyebrow Pencil">Eyebrow Pencil</option>
+                <option value="Essence Cream">Essence Cream</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center mb-4 ftco-animate mx-auto">
+            <h3 class="h4 mb-4">Features</h3>
+          </div>
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Content max length</div>
+            <select id="feature1" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="content_str_len_very short">very short</option>
+              <option value="content_str_len_short">short</option>
+              <option value="content_str_len_normal">normal</option>
+              <option value="content_str_len_long">long</option>
+              <option value="content_str_len_very long">very long</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Sentiment number</div>
+            <select id="feature2" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="sentiment_number_positive">positive</option>
+              <option value="sentiment_number_negative">negative</option>
+              <option value="sentiment_number_neutral">neutral</option>
+            </select>
+          </div>
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Mention count</div>
+            <select id="feature3" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="Mention_Count_not mentioned">not mentioned</option>
+              <option value="Mention_Count_mentioned">mentioned</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Number of hashtags</div>
+            <select id="feature4" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="Num_Hashtags_no hashtag">no hashtag</option>
+              <option value="Num_Hashtags_few hashtags">few hashtags</option>
+              <option value="Num_Hashtags_some hashtags">some hashtags</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Word count</div>
+            <select id="feature5" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="Word_Count_less">less</option>
+              <option value="Word_Count_medium">medium</option>
+              <option value="Word_Count_more">more</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Image count</div>
+            <select id="feature6" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="Image_Count_no image">no image</option>
+              <option value="Image_Count_one image">one image</option>
+              <option value="Image_Count_some images">some images</option>
+            </select>
+          </div>
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Paragraph count</div>
+            <select id="feature7" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="Paragraph_Count_1">1</option>
+              <option value="Paragraph_Count_2">2</option>
+            </select>
+          </div>
+          <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+            <div class="mb-2">Interaction index</div>
+            <select id="feature8" class="custom-select mb-4">
+              <option value="">No special need</option>
+              <option value="Interaction_index_less">less</option>
+              <option value="Interaction_index_medium">medium</option>
+              <option value="Interaction_index_more">more</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-3 ftco-animate mx-auto">
+          <div class="mb-2">Top 3 keywords</div>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="topKeywords"
+            placeholder="Enter top 3 keywords"
+          />
+        </div>
+
+        <div class="col-lg-3 text-center mb-5 ftco-animate mx-auto">
+          <button class="btn btn-primary" onclick="submitSelections()">
+            Submit
+          </button>
+          <progress
+            id="submissionProgress"
+            value="0"
+            max="100"
+            style="display: none"
+          ></progress>
+        </div>
+      </div>
+
+      <div class="row ftco-animate justify-content-center mb-5">
+        <div class="col-lg-4">
+          <div class="result-preview">
+            <p id="serviceDescription1" class="text-center mb-4 selectable">
+              Recommended Features
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="result-preview">
+            <p id="serviceDescription2" class="text-center mb-4 selectable">
+              Recommended Text
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add input field -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-7 text-center ftco-animate">
+          <div id="pictureContainer" class="mb-4">
+            <p id="picturewords" class="lead">
+              ...Or you can get the picture recommendation below
+            </p>
+          </div>
+          <h3 class="h4 mb-4">Picture keywords</h3>
+
+          <div class="justify-center">
+            <input
+              type="text"
+              id="pictureInput"
+              class="form-control mb-5 small-input"
+              placeholder="Enter..."
+            />
+          </div>
+
+          <button class="btn btn-primary mb-5" onclick="submitPictureInput()">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div class="row ftco-animate justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <div class="result-preview">
+            <p id="serviceDescription5" class="text-center mb-4 selectable">
+              Recommendation Output Area
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-7 text-center ftco-animate">
+          <div id="userInputMessageContainer" class="mb-4">
+            <p id="fixedwords" class="lead">
+              ...Or you can customize your input below
+            </p>
+            <p id="userInputMessage" class="lead"></p>
+          </div>
+          <h3 class="h4 mb-4">Category</h3>
+
+          <div class="justify-center">
+            <input
+              type="text"
+              id="categoryInput"
+              class="form-control mb-5 small-input"
+              placeholder="Enter category..."
+            />
+          </div>
+
+          <h3 class="h4 mb-2">The advertising copy</h3>
+          <p class="lead mb-5">...that you found great</p>
+
+          <textarea
+            id="userInput"
+            class="form-control mb-5"
+            rows="5"
+            placeholder="Type here..."
+          ></textarea>
+
+          <button class="btn btn-primary mb-5" onclick="submitUserInput()">
+            Submit Input
+          </button>
+        </div>
+        <div class="row ftco-animate justify-content-center mb-5">
+          <div class="col-lg-6">
+            <div class="result-preview">
+              <p id="serviceDescription3" class="text-center mb-4 selectable">
+                Recommended Features
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="result-preview">
+              <p id="serviceDescription4" class="text-center mb-4 selectable">
+                Recommendation Output Area
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleModel("pretrained");
+      });
+
+      var pretrainedBtnState = 1; // Assuming it's initially active
+      var newModelBtnState = 0;
+
+      // Modify the toggleModel function
+      function toggleModel(modelType) {
+        var pretrainedBtn = document.getElementById("pretrainedBtn");
+        var newModelBtn = document.getElementById("newModelBtn");
+        var datePickerSection = document.getElementById("datePickerSection");
+
+        if (modelType === "pretrained") {
+          pretrainedBtn.classList.add("active");
+          newModelBtn.classList.remove("active");
+          datePickerSection.style.display = "none";
+          newModelBtnState = 0; // Set the state of New Model button to inactive
+          pretrainedBtnState = 1; // Set the state of Pretrained button to active
+        } else if (modelType === "newModel") {
+          newModelBtn.classList.add("active");
+          pretrainedBtn.classList.remove("active");
+          datePickerSection.style.display = "block";
+          newModelBtnState = 1; // Set the state of New Model button to active
+          pretrainedBtnState = 0; // Set the state of Pretrained button to inactive
+        }
+      }
+
+      function submitSelections() {
+        var selectedValues = [];
+        var serviceOptions = document.getElementById("serviceOptions");
+        var selectedServiceOption =
+          serviceOptions.options[serviceOptions.selectedIndex].value;
+
+        if (selectedServiceOption === "Select an product category") {
+          alert(
+            "Please do select one intended product category from the category list."
+          );
+          return;
+        }
+        var progressBar = document.getElementById("submissionProgress");
+        progressBar.style.display = "block";
+
+        var progress = 0;
+        var interval = setInterval(function () {
+          progress += 20;
+          progressBar.value = progress;
+
+          if (progress >= 100) {
+            clearInterval(interval);
+            progressBar.style.display = "none";
+          }
+        }, 1000);
+
+
+        if (newModelBtnState === 1) {
+          var startDate = document.getElementById("datepicker").value;
+          var endDate = document.getElementById("datepicker2").value;
+
+          if (startDate === "" || endDate === "") {
+            alert("Please select your start date and end date properly");
+            return; 
+          }
+
+          var startDateObj = new Date(startDate);
+          var endDateObj = new Date(endDate);
+
+          var currentDate = new Date();
+
+          if (startDateObj > endDateObj) {
+            alert("Start date cannot be greater than end date");
+            return; 
+          }
+
+          if (startDateObj > currentDate) {
+            alert("Start date cannot be in the future");
+            return; 
+          }
+
+          if (endDateObj > currentDate) {
+            alert("End date cannot be in the future");
+            return; 
+          }
+
+          // Add date values to selectedValues array
+          selectedValues.push(startDate);
+          selectedValues.push(endDate);
+        }
+
+        var buttonStates = {
+          pretrainedBtn: pretrainedBtnState,
+          newModelBtn: newModelBtnState,
+        };
+        var serviceOptions = document.getElementById("serviceOptions");
+        var selectedServiceOption =
+          serviceOptions.options[serviceOptions.selectedIndex].value;
+        selectedValues.push(selectedServiceOption);
+
+        var selectedFeatureCount = 0; 
+
+        for (var i = 1; i <= 8; i++) {
+          var dropdown = document.getElementById("feature" + i);
+          var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+
+
+          if (selectedValue !== "") {
+            selectedFeatureCount++;
+          }
+
+          selectedValues.push(selectedValue);
+        }
+
+        if (selectedFeatureCount < 2) {
+          alert(
+            "Please do select at least 2 features so that we can provide meaning for recommendations."
+          );
+          return; 
+        }
+
+        var topKeywords = document.getElementById("topKeywords").value;
+        selectedValues.push(topKeywords);
+
+        fetch("/handle_selections", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ buttonStates, selectedValues }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Response from app.py:", data);
+
+            var serviceDescriptionElement1 = document.getElementById(
+              "serviceDescription1"
+            );
+            if (serviceDescriptionElement1) {
+              if (serviceDescriptionElement1) {
+                var valuesParagraph = document.createElement("p");
+                valuesParagraph.className = "text-center mb-2";
+                valuesParagraph.innerHTML = "Recommended features:";
+
+                if (data.ruleOutput) {
+                  if (Array.isArray(data.ruleOutput)) {
+                    data.ruleOutput.forEach((value, index) => {
+                      var prefix = "";
+                      if (index === 0) {
+                        prefix = "Content length: ";
+                      } else if (index === 1) {
+                        prefix = "Sentiment number: ";
+                      } else if (index === 2) {
+                        prefix = "Mention count: ";
+                      } else if (index === 3) {
+                        prefix = "Number of hashtags: ";
+                      } else if (index === 4) {
+                        prefix = "Word count: ";
+                      } else if (index === 5) {
+                        prefix = "Image count: ";
+                      } else if (index === 6) {
+                        prefix = "Paragraph count: ";
+                      } else if (index === 7) {
+                        prefix = "Interaction_index: ";
+                      }
+
+                      var formattedValue = prefix + value;
+                      var valueElement = document.createElement("div");
+                      valueElement.textContent = formattedValue;
+                      valuesParagraph.appendChild(valueElement);
+                    });
+                  } else {
+                    var formattedValue = data.ruleOutput;
+                    var valueElement = document.createElement("div");
+                    valueElement.textContent = formattedValue;
+                    valuesParagraph.appendChild(valueElement);
+                  }
+                } else {
+                  console.error(
+                    "Invalid or missing ruleOutput in the response data."
+                  );
+                }
+              } else {
+                console.error(
+                  'Element with ID "serviceDescription1" not found.'
+                );
+              }
+
+              serviceDescriptionElement1.innerHTML = "";
+              serviceDescriptionElement1.appendChild(valuesParagraph);
+            } else {
+              console.error('Element with ID "serviceDescription1" not found.');
+            }
+
+
+            var serviceDescriptionElement2 = document.getElementById(
+              "serviceDescription2"
+            );
+            if (serviceDescriptionElement2) {
+              var tweetGenerateArray = data.tweetGenerate || [];
+
+              if (tweetGenerateArray.length > 0) {
+                var descriptionText2 =
+                  "Recommended content: <br>" + tweetGenerateArray[0];
+
+                var tempElement = document.createElement("div");
+                tempElement.innerHTML = descriptionText2;
+
+                serviceDescriptionElement2.innerHTML = "";
+                serviceDescriptionElement2.appendChild(tempElement); 
+              } else {
+                console.error("No content recommendations available.");
+              }
+            } else {
+              console.error('Element with ID "serviceDescription2" not found.');
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+
+      function scrollToFeatures() {
+        var featuresSection = document.getElementById("section-services");
+        featuresSection.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function submitPictureInput() {
+        var pictureInputValue = document.getElementById("pictureInput").value;
+        if (pictureInputValue === "") {
+          alert(
+            "Please type in some keywords of your intended picture choice."
+          );
+          return;
+        }
+
+        fetch("/process_picture_input", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ input: pictureInputValue }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+
+            updateServiceDescription(data.result);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+
+      function updateServiceDescription(result) {
+
+        result = result.replace(/\n/g, "<br>");
+
+        // 更新显示在<p id="serviceDescription5">中的内容
+        var serviceDescription = document.getElementById("serviceDescription5");
+        serviceDescription.innerHTML = result;
+      }
+
+      function submitUserInput() {
+        var userInput = document.getElementById("userInput").value;
+        var categoryInput = document.getElementById("categoryInput").value;
+
+        if (categoryInput === "") {
+          alert("Please type in one intended product category.");
+          return;
+        }
+
+        if (userInput === "") {
+          alert("Please type in one commercial copy that you find decent.");
+          return;
+        }
+
+        // Send the user input to the server
+        fetch("/handle_user_input", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ categoryInput, userInput }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Response from app.py:", data);
+            content = data[0];
+
+            data = data.slice(1);
+
+            // Update the content of the specified div elements
+            var serviceDescriptionElement3 = document.getElementById(
+              "serviceDescription3"
+            );
+            if (serviceDescriptionElement3) {
+              var valuesParagraph = document.createElement("p");
+              valuesParagraph.className = "text-center mb-2";
+              valuesParagraph.innerHTML = "Recommended features:";
+              if (data) {
+                if (Array.isArray(data)) {
+                  data.forEach((value, index) => {
+                    var prefix = "";
+                    if (index === 0) {
+                      prefix = "Item category: ";
+                    } else if (index === 1) {
+                      prefix = "string length of content: ";
+                    } else if (index === 2) {
+                      prefix =
+                        "Sentiment of content (-1 for negative and 1 for positive): ";
+                    } else if (index === 3) {
+                      prefix = "Mention number of content: ";
+                    } else if (index === 4) {
+                      prefix = "Number of Hashtags: ";
+                    } else if (index === 5) {
+                      prefix = "Top 3 Keywords of post: ";
+                    } else if (index === 6) {
+                      prefix = "Number of words: ";
+                    } else if (index === 7) {
+                      prefix = "Number of image: ";
+                    } else if (index === 8) {
+                      prefix = "Number of paragraph: ";
+                    }
+
+                    var formattedValue = prefix + value;
+                    var valueElement = document.createElement("div");
+                    valueElement.textContent = formattedValue;
+                    valuesParagraph.appendChild(valueElement);
+                  });
+                } else {
+                  var formattedValue = data.ruleOutput;
+                  var valueElement = document.createElement("div");
+                  valueElement.textContent = formattedValue;
+                  valuesParagraph.appendChild(valueElement);
+                }
+              } else {
+                console.error(
+                  "Invalid or missing ruleOutput in the response data."
+                );
+              }
+            } else {
+              console.error('Element with ID "serviceDescription3" not found.');
+            }
+            serviceDescriptionElement3.innerHTML = "";
+            serviceDescriptionElement3.appendChild(valuesParagraph);
+
+            // Update the content of the specified div element
+            var serviceDescriptionElement4 = document.getElementById(
+              "serviceDescription4"
+            );
+            if (serviceDescriptionElement4) {
+              serviceDescriptionElement4.innerHTML =
+                "Recommended content: <br>" + content;
+            } else {
+              console.error('Element with ID "serviceDescription4" not found.');
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#4586ff"
+        />
+      </svg>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.animateNumber.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
