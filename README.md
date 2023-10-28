@@ -22,7 +22,7 @@ PostCraft has been deployed on a website, enabling users to conveniently access 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
 | Liu Siyan | A0285857H | Model Design and construction, Back-end developent and Integration, Data collation, cleansing and preliminary analysis, Practical validation, Documentation and Figures| E1221669@u.nus.edu|
-| Lin Zijun | A0285897Y | Front end development, Front end and back end Integration, Deployment, User Guide| A1234567B@gmail.com |
+| Lin Zijun | A0285897Y | Front end development, Front end and back end Integration, Deployment, User Guide| E1221709@u.nus.edu |
 | Lai Weichih | A0285875H | Data collection and crawling, Back-end development, Documentation| E1221687@u.nus.edu|
 | Fang Ruolin | A0285983H| Business analysis, Data collection and crawling, Documentation| E1221795@u.nus.edu|
 
